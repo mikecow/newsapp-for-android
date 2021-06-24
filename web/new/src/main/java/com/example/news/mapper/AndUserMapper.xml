@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.news.mapper.AndUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.news.bean.AndUser">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="password" property="password" />
+        <result column="favor_1" property="favor1" />
+        <result column="favor_2" property="favor2" />
+        <result column="favor_3" property="favor3" />
+        <result column="favor_4" property="favor4" />
+        <result column="favor_5" property="favor5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, password, favor_1, favor_2, favor_3, favor_4, favor_5
+    </sql>
+
+</mapper>
